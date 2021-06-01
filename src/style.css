@@ -1,0 +1,62 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: none !important; /* 2 */
+  border-color: none !important; /* 2 */
+}
+.sansation-fontFamily a , .sansation-fontFamily{
+    font-family:"sansation";
+}
+.overpassfont-family{
+    font-family: "overpass";
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.body{background-color:white !important;}
+
+.tab {
+  opacity:0;
+  visibility:hidden;
+  transform:translate(0,50px);
+}
+
+.active-tab,.active-button{
+  transition:transform 0.2s,background 0.2s,color 0.2s;
+}
+
+.active-tab{
+  visibility:visible;
+  opacity:1;
+  transform:translate(0,0);
+  z-index:99;
+  color: #000000;
+  background-color: rgba(243, 244, 246, 1);
+}
+ .active-button{
+    background:#1570BF !important;
+    color:#ffffff;
+    border-radius: 50px;
+}
+
+.get-int-pills span:first-child {
+ border-top-left-radius: 50px;
+ border-bottom-left-radius: 50px;
+}
+
+.get-int-pills span:last-child {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
