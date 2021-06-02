@@ -31869,8 +31869,8 @@ video {
 ::before,
 ::after {
   box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: none !important; /* 2 */
+  border-width:1 !important; /* 2 */
+  border-style:solid !important; /* 2 */
   border-color: none !important; /* 2 */
 }
 
@@ -31924,6 +31924,20 @@ html, body {
 .get-int-pills span:last-child {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+.testimonial-images{
+  width: 200px;
+  height: 200px;
+}
+
+.pro:hover{
+  padding: 20px 5px;
+}
+
+.nav-position{
+  position: fixed;
+  z-index: 99;
 }
 
 @media (min-width: 640px) {
@@ -187640,3 +187654,13 @@ html, body {
     --tw-backdrop-sepia: sepia(100%);
   }
 }
+
+
+
+
+
+
+
+
+
+

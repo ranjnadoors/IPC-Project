@@ -9,8 +9,8 @@
 ::before,
 ::after {
   box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: none !important; /* 2 */
+  border-width:1 !important; /* 2 */
+  border-style:solid !important; /* 2 */
   border-color: none !important; /* 2 */
 }
 .sansation-fontFamily a , .sansation-fontFamily{
@@ -60,3 +60,26 @@ html, body {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+.testimonial-images{
+  width: 200px;
+  height: 200px;
+}
+
+.pro:hover{
+  padding: 20px 5px;
+}
+
+.nav-position{
+  position: fixed;
+  z-index: 99;
+}
+
+
+
+
+
+
+
+
+
+
