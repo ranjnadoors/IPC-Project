@@ -78,6 +78,58 @@ html, body {
 
 
 
+/*.one-third:hover{ 
+background: #eeeeee;
+background-image: url('../public/images/Group\ 19@1X.png');
+background-repeat: no-repeat;
+background-size: 10vh;
+z-index: 99;
+background-attachment: fixed;
+background-position: center;
+
+
+}*/
+.one-third {
+  
+  position: relative;
+  display: inline-block;
+  
+}
+.one-third .img-top {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  z-index: 99;
+ }
+ .one-third:hover .img-top  {
+  display: inline;
+ }
+
+ span.black-overlay {
+  background: rgba(0,0,0,0.5);
+  display: none;
+  height: 271px;
+  width: 274px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  /* bottom: 2%; */
+  left: 30px;
+  }
+
+
+  .one-third:hover span.black-overlay {
+    display:block;
+  }
+
+
+
+
+
+
+
+
 
 
 
