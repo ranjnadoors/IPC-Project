@@ -71,9 +71,12 @@ html, body {
   width: 200px;
   height: 200px;
 }
+.pro{
+  padding: 10px;
+}
 
 .pro:hover{
-  padding: 20px 5px;
+ padding: 10px ;
 }
 
 .nav-position{
