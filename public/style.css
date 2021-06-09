@@ -31887,6 +31887,16 @@ html, body {
   overflow-x: hidden;
 }
 
+.nav-bar{
+  padding: 13px;
+}
+
+.nav-bar:hover{
+  background-color:#1570BF ;
+  padding: 13px;
+  border-radius: 4px;
+}
+
 .body{
   background-color:white !important;
 }
