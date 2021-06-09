@@ -31999,71 +31999,18 @@ span.black-overlay {
   display:block;
 }
 
-#slider {
-  overflow: hidden;
-}
-
-@-webkit-keyframes slider {
-  0% { left: 0;
-  }
-
-  30% { left: 0;
-  }
-
-  33% { left: -100%;
-  }
-
-  63% { left: -100%;
-  }
-
-  66% { left: -200%;
-  }
-
-  95% { left: -200%;
-  }
-
-  100% { left: 0;
-  }
-}
-
-@keyframes slider {
-  0% { left: 0;
-  }
-
-  30% { left: 0;
-  }
-
-  33% { left: -100%;
-  }
-
-  63% { left: -100%;
-  }
-
-  66% { left: -200%;
-  }
-
-  95% { left: -200%;
-  }
-
-  100% { left: 0;
-  }
-}
-
-#slider figure {
-  width:300%;
+#slideshow {
+  margin: 15px auto;
   position: relative;
-  -webkit-animation: 9s slider infinite;
-          animation: 9s slider infinite;
+  padding: 10px;
 }
 
-#slider figure:hover {
-  /*animation-play-state: paused; enable for pause on hover*/
-}
-
-#slider figure img {
-  width: 33.333333333%;
-  height : 100%;
-  float: left;
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
 }
 
 @media (min-width: 640px) {

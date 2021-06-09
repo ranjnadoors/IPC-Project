@@ -382,21 +382,37 @@
         </button></div>
     <!------------------------end of team member------------------------->
     <!---------------------------client says---------------------------->
-    <div class=" lg:my-40 mt-10 bg-client-img h-100 bg-no-repeat bg-cover ">
+    <div class=" lg:my-40  bg-client-img h-100 bg-no-repeat bg-cover ">
         <div class="bg-repair-service2-img h-full max-w-screen  p-4 bg-opacity-25 shadow-md mx-aut hover:shadow-lg ">
             <div class="text-center  max-w-4xl mx-auto py-40 ">
                 <h2 class="text-white font-bold uppercase sansation-fontFamily text-5xl  text-opacity-100 ">Clients Say
                 </h2>
-
-                <p class=" text-xl my-5 overpassfont-family text-white mx-5">If you are going to use a passage of
-                    Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making
-                    this the first </p>
+                <div id="slideshow" class="mb-40">
+                    <div>
+                        <p class=" text-xl my-5 overpassfont-family text-white mx-5">If you are going to use a passage of
+                            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                            All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making
+                            this the first </p>
+                    </div>
+                    <div>
+                        <p class=" text-xl my-5 overpassfont-family text-white mx-5"> Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book </p>
+                    </div>
+                    <div>
+                        <p class=" text-xl my-5 overpassfont-family text-white mx-5">If you are going to use a passage of
+                            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                            All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making
+                            this the first </p>
+                    </div>
+                 </div>
+               
 
             </div>
         </div>
     </div>
-
+    
 
 
 
@@ -696,7 +712,16 @@
                 }
             });
 
+            $("#slideshow > div:gt(0)").hide();
 
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},3000)
         })
     </script>
 </body>
