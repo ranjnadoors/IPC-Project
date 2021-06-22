@@ -278,13 +278,13 @@ background-position: center;
     -moz-osx-font-smoothing: grayscale;
    }
    .slick-prev {
-    left: -40px;
+    left: -14px;
    }
    .slick-prev:before {
     content: "";
    }
    .slick-next {
-    right: -40px;
+    right: -14px;
    }
    .slick-next:before {
     content: "";

@@ -32156,7 +32156,7 @@ figure.testimonial blockquote:before {
 }
 
 .slick-prev {
-  left: -40px;
+  left: -14px;
 }
 
 .slick-prev:before {
@@ -32164,7 +32164,7 @@ figure.testimonial blockquote:before {
 }
 
 .slick-next {
-  right: -40px;
+  right: -14px;
 }
 
 .slick-next:before {
