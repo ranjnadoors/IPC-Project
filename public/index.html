@@ -14,316 +14,333 @@
 </head>
 
 <body>
-    <!------------------------------------------------------Home page-------------------------------------->
-    <div class="bg-nav-img bg-no-repeat bg-cover " id="home">
-        <div class="w-full  dark-mode:text-gray-200 dark-mode:bg-gray-800 nav-position">
-            <div x-data="{ open: false }"
-                class="flex flex-col max-w-screen-xl px-4 mx-auto  lg:justify-between lg:flex-row md:px-6 lg:px-8">
-                <div class="p-4 flex flex-row items-center justify-between">
-                    <a href="#"
-                        class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img
-                            src="images/logo.png" alt=""></a>
-                    <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                        <svg fill="currentColor" viewBox="0 0 20 20" class="w-10 h-10 text-white">
+    <div class="container-fluid">
+        <!------------------------------------------------------Home page-------------------------------------->
+        <div class="bg-nav-img bg-no-repeat bg-cover " id="home">
+            <div class="w-full  dark-mode:text-gray-200 dark-mode:bg-gray-800 nav-position">
+                <div x-data="{ open: false }"
+                    class="flex flex-col max-w-screen-xl px-4 mx-auto  lg:justify-between lg:flex-row md:px-6 lg:px-8">
+                    <div class="p-4 flex flex-row items-center justify-between">
+                        <a href="#"
+                            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img
+                                src="images/logo.png" alt=""></a>
+                        <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline"
+                            @click="open = !open">
+                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-10 h-10 text-white">
 
-                            <path x-show="!open" fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                            <path x-show="open" fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 top-16 md:pb-0 hidden lg:flex lg:flex uppercase 
+                                <path x-show="!open" fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                                <path x-show="open" fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 top-16 md:pb-0 hidden lg:flex lg:flex uppercase 
                     lg:justify-center w-full lg:flex-row sansation-fontFamily md:space-x-6 py-5 nav-bg  ">
-                    <a href="#about-us" class="block py-1  text-white nav-bar">About us</a>
-                    <a href="#product" class="blockpy-1  text-white nav-bar ">Product</a>
-                    <a href="#repair-service" class="block  py-1 text-white nav-bar">Repair & services</a>
-                    <a href="#technology" class="block py-1  text-white nav-bar"> our technology</a>
-                    <a href="#team" class="block py-1  text-white nav-bar">Team</a>
-                    <a href="#blog" class="block py-1  text-white nav-bar">Blog</a>
-                    <a href="#contact-us" class="block py-1  text-white nav-bar">contact us</a>
+                        <a href="#about-us" class="block py-1  text-white nav-bar">About us</a>
+                        <a href="#product" class="blockpy-1  text-white nav-bar ">Product</a>
+                        <a href="#repair-service" class="block  py-1 text-white nav-bar">Repair & services</a>
+                        <a href="#technology" class="block py-1  text-white nav-bar"> our technology</a>
+                        <a href="#team" class="block py-1  text-white nav-bar">Team</a>
+                        <a href="#blog" class="block py-1  text-white nav-bar">Blog</a>
+                        <a href="#contact-us" class="block py-1  text-white nav-bar">contact us</a>
 
 
-                </nav>
-                <!--a href="#" class="pt-8 hidden lg:block"><img src="images/Path 1@1X.png" alt=""></a-->
+                    </nav>
+                    <!--a href="#" class="pt-8 hidden lg:block"><img src="images/Path 1@1X.png" alt=""></a-->
+                </div>
             </div>
-        </div>
-        <article class="text-lg px-6 lg:pt-40 pt-40 text-white mx-auto max-w-5xl ">
-            <h2 class="md:text-5xl text-4xl font-extrabold text-center sansation-fontFamily uppercase">Manufacturers of
-                electrical control panels</h2>
-            <p class="py-10 text-center navbarsss overpassfont-family font-xl">Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley of
-                type and scrambled it to make a type specimen book
-                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book</p>
+            <article class="text-lg px-6 lg:pt-40 pt-40 text-white mx-auto max-w-5xl ">
+                <h2 class="md:text-5xl text-4xl font-extrabold text-center sansation-fontFamily uppercase">Manufacturers
+                    of
+                    electrical control panels</h2>
+                <p class="py-10 text-center navbarsss overpassfont-family font-xl">Lorem Ipsum is simply dummy text of
+                    the
+                    printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a
+                    galley of
+                    type and scrambled it to make a type specimen book
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book</p>
 
-        </article>
-    </div>
-    <!---------------------------------end of home page-------------------------------------->
-    <!-------------------------------------About us--------------------------------------------->
-    <div class="text-center my-20  max-w-3xl mx-auto" id="about-us">
-        <h2 class="text-blue-600 font-bold uppercase overpassfont-family font-xl">YOU ARE WELCOME!</h2>
-        <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily">ABOUT US</h1>
-        <div class="md:ml-80 pl-4 ml-36">
-            <div class=" bg-blue-600 h-4 w-20"></div>
+            </article>
         </div>
-        <p class="my-5 font-400 text-center captilize text-xl overpassfont-family font-semibold mx-5">It was popularised
-            in
-            the 1960s
-            with the release of Letraset sheets containing
-            Lorem Ipsum passages, and more recently with desktop publishing software
-            like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
-
-    <div class="flex flex-wrap flex-row  justify-center relative">
-        <div class="inline-block lg:absolute lg:mr-48 lg:pr-48">
-            <img src="images/our-mission.png" alt="">
-        </div>
-        <div class="inline-block lg:ml-48 lg:pl-48  ">
-            <img src="images/IMG_2592.jpg" alt="" class="h-auto lg:mt-20  mt-10">
-        </div>
-    </div>
-
-    <!------------------------------------- end of About us--------------------------------------------->
-    <!------------------------------------- Product---------------------------------------------------->
-    <div class="bg-gray-50 lg:px-20 px-10" id="product">
-        <div class="text-center my-20  max-w-3xl mx-auto pt-10">
-            <h2 class="text-blue-600 font-bold uppercase overpassfont-family font-xl">Shop</h2>
-            <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily">Product</h1>
-            <div class="lg:ml-80 lg:pl-4 md:ml-84 md:pl-40 ml-20">
+        <!---------------------------------end of home page-------------------------------------->
+        <!-------------------------------------About us--------------------------------------------->
+        <div class="text-center my-20  max-w-3xl mx-auto" id="about-us">
+            <h2 class="text-blue-600 font-bold uppercase overpassfont-family font-xl">YOU ARE WELCOME!</h2>
+            <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily">ABOUT US</h1>
+            <div class="md:ml-80 pl-4 ml-36">
                 <div class=" bg-blue-600 h-4 w-20"></div>
             </div>
-            <p class="my-5 font-400 text-center captilize text-xl overpassfont-family font-semibold"> It was popularised
-                in the
-                1960s</p>
+            <p class="my-5 font-400 text-center captilize text-xl overpassfont-family font-semibold mx-5">It was
+                popularised
+                in
+                the 1960s
+                with the release of Letraset sheets containing
+                Lorem Ipsum passages, and more recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <!---------------------------------column grid------------------------------------------>
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pb-5" style="cursor: pointer;">
-            <div class="md:mb-40 mb-20">
-                <div
-                    class="block text-center pro transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110  motion-reduce:transition-none motion-reduce:transform-none...">
-                    <div class="flex justify-center">
-                        <img src="images/NoPath - Copy (2).png" alt="" class="h-60"></div>
-                    <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
-                    <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC Distributor Board
-                    </h2>
-                    <!--button hover:bg-white hover:shadow-lg hover:border-transparent transform hover:scale-110 motion-reduce:transform-none
+
+        <div class="flex flex-wrap flex-row  justify-center relative">
+            <div class="inline-block lg:absolute lg:mr-48 lg:pr-48">
+                <img src="images/our-mission.png" alt="">
+            </div>
+            <div class="inline-block lg:ml-48 lg:pl-48  ">
+                <img src="images/IMG_2592.jpg" alt="" class="h-auto lg:mt-20  mt-10">
+            </div>
+        </div>
+
+        <!------------------------------------- end of About us--------------------------------------------->
+        <!------------------------------------- Product---------------------------------------------------->
+        <div class="bg-gray-50 lg:px-20 px-10" id="product">
+            <div class="text-center my-20  max-w-3xl mx-auto pt-10">
+                <h2 class="text-blue-600 font-bold uppercase overpassfont-family font-xl">Shop</h2>
+                <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily">Product</h1>
+                <div class="lg:ml-80 lg:pl-4 md:ml-84 md:pl-40 ml-20">
+                    <div class=" bg-blue-600 h-4 w-20"></div>
+                </div>
+                <p class="my-5 font-400 text-center captilize text-xl overpassfont-family font-semibold"> It was
+                    popularised
+                    in the
+                    1960s</p>
+            </div>
+            <!---------------------------------column grid------------------------------------------>
+            <div class="container mx-auto">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pb-5" style="cursor: pointer;">
+                    <div class="md:mb-40 mb-20">
+                        <div
+                            class="block text-center pro transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110  motion-reduce:transition-none motion-reduce:transform-none...">
+                            <div class="flex justify-center">
+                                <img src="images/NoPath - Copy (2).png" alt="" class="h-60"></div>
+                            <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
+                            <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC Distributor
+                                Board
+                            </h2>
+                            <!--button hover:bg-white hover:shadow-lg hover:border-transparent transform hover:scale-110 motion-reduce:transform-none
                         class="bg-blue-600 hover:bg-blue-600 text-white font-bold py-2 px-24 rounded-full mt-8">Buy</button-->
-                </div>
-            </div>
-            <!-- ... -->
-            <div class="md:mb-40 mb-20">
-                <div class="block text-center pro transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
+                        </div>
+                    </div>
+                    <!-- ... -->
+                    <div class="md:mb-40 mb-20">
+                        <div class="block text-center pro transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
                     motion-reduce:transition-none motion-reduce:transform-none ...">
-                    <div class="flex justify-center">
-                        <img src="images/NoPath - Copy (4).png" alt="" class="h-60"></div>
-                    <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
-                    <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC Distributor Board
-                    </h2>
-                </div>
-            </div>
-            <div class="md:mb-40 mb-20">
-                <div class="block text-center pro  transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
+                            <div class="flex justify-center">
+                                <img src="images/NoPath - Copy (4).png" alt="" class="h-60"></div>
+                            <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
+                            <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC Distributor
+                                Board
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="md:mb-40 mb-20">
+                        <div class="block text-center pro  transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
                     motion-reduce:transition-none motion-reduce:transform-none ...">
-                    <div class="flex justify-center">
-                        <img src="images/NoPath - Copy (5).png" alt="" class="h-60"></div>
-                    <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
-                    <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC Distributor
-                        Board</h2>
+                            <div class="flex justify-center">
+                                <img src="images/NoPath - Copy (5).png" alt="" class="h-60"></div>
+                            <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
+                            <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC Distributor
+                                Board</h2>
 
-                </div>
-            </div>
-            <div class="md:mb-40 mb-20">
-                <div class="block text-center pro  transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
+                        </div>
+                    </div>
+                    <div class="md:mb-40 mb-20">
+                        <div class="block text-center pro  transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
                     motion-reduce:transition-none motion-reduce:transform-none ...">
-                    <div class="flex justify-center">
-                        <img src="images/NoPath - Copy (6).png" alt="" class="h-60"></div>
-                    <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
-                    <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
-                        Distributor Board</h2>
+                            <div class="flex justify-center">
+                                <img src="images/NoPath - Copy (6).png" alt="" class="h-60"></div>
+                            <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
+                            <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
+                                Distributor Board</h2>
 
-                </div>
-            </div>
-            <div class="md:mb-40 mb-20">
-                <div class="block text-center pro transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
+                        </div>
+                    </div>
+                    <div class="md:mb-40 mb-20">
+                        <div class="block text-center pro transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
                 motion-reduce:transition-none motion-reduce:transform-none ... ">
-                    <div class="flex justify-center">
-                        <img src="images/NoPath - Copy-1.png" alt="" class="h-60"></div>
-                    <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
-                    <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
-                        Distributor Board</h2>
+                            <div class="flex justify-center">
+                                <img src="images/NoPath - Copy-1.png" alt="" class="h-60"></div>
+                            <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
+                            <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
+                                Distributor Board</h2>
 
-                </div>
-            </div>
-            <div class="md:mb-40 mb-20">
-                <div class="block text-center pro  transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
+                        </div>
+                    </div>
+                    <div class="md:mb-40 mb-20">
+                        <div class="block text-center pro  transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
                     motion-reduce:transition-none motion-reduce:transform-none ...">
-                    <div class="flex justify-center">
-                        <img src="images/NoPath - Copy.png" alt="" class="h-60"></div>
-                    <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
-                    <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
-                        Distributor Board</h2>
+                            <div class="flex justify-center">
+                                <img src="images/NoPath - Copy.png" alt="" class="h-60"></div>
+                            <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
+                            <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
+                                Distributor Board</h2>
 
-                </div>
-            </div>
-            <div class="md:mb-10 mb-20">
-                <div class="block text-center pro    transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
+                        </div>
+                    </div>
+                    <div class="md:mb-10 mb-20">
+                        <div class="block text-center pro    transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
                     motion-reduce:transition-none motion-reduce:transform-none ...">
-                    <div class="flex justify-center">
-                        <img src="images/NoPath - Copy (5).png" class="h-60" alt=""></div>
-                    <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
-                    <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
-                        Distributor Board</h2>
+                            <div class="flex justify-center">
+                                <img src="images/NoPath - Copy (5).png" class="h-60" alt=""></div>
+                            <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
+                            <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
+                                Distributor Board</h2>
 
-                </div>
-            </div>
-            <div class="md:mb-10 mb-20">
-                <div class="block text-center pro  transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
+                        </div>
+                    </div>
+                    <div class="md:mb-10 mb-20">
+                        <div class="block text-center pro  transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
                     motion-reduce:transition-none motion-reduce:transform-none ...">
-                    <div class="flex justify-center">
-                        <img src="images/NoPath-1.png" alt="" class="h-60"></div>
-                    <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
-                    <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
-                        Distributor Board</h2>
+                            <div class="flex justify-center">
+                                <img src="images/NoPath-1.png" alt="" class="h-60"></div>
+                            <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
+                            <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
+                                Distributor Board</h2>
 
-                </div>
-            </div>
-            <div class="md:mb-10 mb-20">
-                <div class="block text-center pro transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
+                        </div>
+                    </div>
+                    <div class="md:mb-10 mb-20">
+                        <div class="block text-center pro transition duration-500 ease-in-out  hover:bg-white transform hover:-translate-y-1 hover:scale-110 
                     motion-reduce:transition-none motion-reduce:transform-none ...">
-                    <div class="flex justify-center">
-                        <img src="images/NoPath.png" alt="" class="h-60"></div>
-                    <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
-                    <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
-                        Distributor Board</h2>
+                            <div class="flex justify-center">
+                                <img src="images/NoPath.png" alt="" class="h-60"></div>
+                            <h6 class=" overpassfont-family text-xs mt-12">DC Distributor Board</h6>
+                            <h2 class=" overpassfont-family font-extrabold text-blue-600 text-xl mt-4">DC
+                                Distributor Board</h2>
+
+                        </div>
+                    </div>
 
                 </div>
-            </div>
-
-        </div>
-    </div>
-    </div>
-    <!--------------------------------------Repair and services------------------------------------------------>
-
-    <div class=" mb-10 bg-repair-service-img h-100 bg-no-repeat bg-cover" id="repair-service">
-        <div class="bg-repair-service2-img h-full max-w-screen p-4 bg-opacity-25 shadow-md mx-aut hover:shadow-lg ">
-            <div class="text-center  max-w-3xl mx-auto py-20 ">
-                <h2 class="text-white font-bold uppercase overpassfont-family font-xl  text-opacity-100 ">
-                    Repairs &
-                    Services</h2>
-                <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily text-white ">Get In
-                    Touch</h1>
-                <div class="md:ml-80 pl-4 ml-36">
-                    <div class=" bg-white h-2 w-20"></div>
-                </div>
-                <a href="#contact-us"> <button
-                        class="bg-blue-600 hover:bg-blue-600 text-white py-2 px-24 rounded mt-8 uppercase text-xl">CLick
-                        Here</button></a>
             </div>
         </div>
     </div>
-    <!------------------------------------- end of  Repair and services--------------------------------------------->
+        <!--------------------------------------Repair and services------------------------------------------------>
 
-    <!-------------------------------------vision--------------------------------------------->
-    <div class="text-center  max-w-3xl mx-auto lg:pt-10 " id="technology">
-        <h2 class="text-black font-bold uppercase overpassfont-family font-xl  text-opacity-100 ">Vision</h2>
-        <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily text-black">Our Technology</h1>
-        <div class="md:ml-80 pl-4 ml-36">
-            <div class=" bg-blue-600 h-4 w-20"></div>
-        </div>
-        <div class="flex  flex-row  justify-center relative mt-10">
-            <img src="images/pexels-thisisengineering-3861969.png" class="lg:w-3/4 h-2/4 mt-20 lg:mr-96" alt="">
-            <div class="tabs mx-auto text-indigo-800 py-auto absolute md:w-3/4 h-4/5 lg:ml-96  z-50 bg-gray-100 ">
-                <div class="top flex text-black rounded-t-md overflow-hidden md:ml-20 lg:pl-1 my-5 ">
-                    <div class="buttons my-auto flex rounded-full  get-int-pills bg-white">
-                        <span tab="1"
-                            class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3 active-button ">2021</span>
-                        <span tab="2" class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3">2021</span>
-                        <span tab="3" class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3">2021</span>
-                        <span tab="4" class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3">2021</span>
-                        <span tab="5" class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3">2021</span>
+        <div class=" mb-10 bg-repair-service-img h-100 bg-no-repeat bg-cover" id="repair-service">
+            <div class="bg-repair-service2-img h-full max-w-screen p-4 bg-opacity-25 shadow-md mx-aut hover:shadow-lg ">
+                <div class="text-center  max-w-3xl mx-auto py-20 ">
+                    <h2 class="text-white font-bold uppercase overpassfont-family font-xl  text-opacity-100 ">
+                        Repairs &
+                        Services</h2>
+                    <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily text-white ">Get In
+                        Touch</h1>
+                    <div class="md:ml-80 pl-4 ml-36">
+                        <div class=" bg-white h-2 w-20"></div>
                     </div>
+                    <a href="#contact-us"> <button
+                            class="bg-blue-600 hover:bg-blue-600 text-white py-2 px-24 rounded mt-8 uppercase text-xl">CLick
+                            Here</button></a>
                 </div>
-                <div class="center  relative">
-                    <!-- tab start -->
-                    <div class="tab  rounded-b-md w-full  absolute top-0 active-tab">
-                        <p class="text-3xl p-3 px-5 font-semibold overpassfont-family">Update</p>
-
-                        <div class="p-3 px-5 text-xl">
-                            <div class="long-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                                expedita rem dolore ut numquam fugiat, accusantium consequatur ratione nesciunt magnam
-                                quibusdam necessitatibus dolorum velit. Quia illo autem adipisci cupiditate.
-                                Repellendus!</div>
-                            <br>
-
-                        </div>
-
-                    </div>
-                    <!--     tab end -->
-                    <div class="tab  rounded-b-md w-full absolute ">
-                        <p class="text-3xl p-3 px-5 font-semibold">Wellcome To Tab 2</p>
-                        <div class="p-3 px-5 text-xl">
-                            <div class="long-text">If you are going to use a passage of Lorem Ipsum, you need to be sure
-                                there isn't anything embarrassing hidden in the middle of text.
-                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                                necessary, making this the first </div>
-                            <br>
-
-                        </div>
-
-                    </div>
-                    <!--     tab end -->
-                    <div class="tab rounded-b-md w-full absolute ">
-                        <p class="text-3xl p-3 px-5 font-semibold">Wellcome To Tab 3</p>
-
-                        <div class="p-3 px-5 text-xl">
-                            <div class="long-text">If you are going to use a passage of Lorem Ipsum, you need to be sure
-                                there isn't anything embarrassing hidden in the middle of text.
-                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                                necessary, making this the first </div>
-                            <br>
-
-                        </div>
-
-                    </div>
-                    <!--     tab end -->
-                    <div class="tab  rounded-b-md w-full  absolute ">
-                        <p class="text-3xl p-3 px-5 font-semibold">Wellcome To Tab 4</p>
-
-                        <div class="p-3 px-5 text-xl">
-                            <div class="long-text">If you are going to use a passage of Lorem Ipsum, you need to be sure
-                                there isn't anything embarrassing hidden in the middle of text.
-                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                                necessary, making this the first </div>
-                            <br>
-
-                        </div>
-
-                    </div>
-                    <!--     tab end -->
-                    <div class="tab rounded-b-md w-full absolute ">
-                        <p class="text-3xl p-3 px-5 font-semibold">Wellcome To Tab 5</p>
-
-                        <div class="p-3 px-5 text-xl">
-                            <div class="long-text">If you are going to use a passage of Lorem Ipsum, you need to be sure
-                                there isn't anything embarrassing hidden in the middle of text.
-                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                                necessary, making this the first </div>
-                        </div>
-
-                    </div>
-                    <!--     tab end -->
-
-
-                </div>
-
             </div>
         </div>
-    </div>
+        <!------------------------------------- end of  Repair and services--------------------------------------------->
+
+        <!-------------------------------------vision--------------------------------------------->
+        <div class="text-center  max-w-3xl mx-auto lg:pt-10 " id="technology">
+            <h2 class="text-black font-bold uppercase overpassfont-family font-xl  text-opacity-100 ">Vision</h2>
+            <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily text-black">Our Technology</h1>
+            <div class="md:ml-80 pl-4 ml-36">
+                <div class=" bg-blue-600 h-4 w-20"></div>
+            </div>
+            <div class="flex  flex-row  justify-center relative mt-10">
+                <img src="images/pexels-thisisengineering-3861969.png" class="lg:w-3/4 h-2/4 mt-20 lg:mr-96" alt="">
+                <div class="tabs mx-auto text-indigo-800 py-auto absolute md:w-3/4 h-4/5 lg:ml-96  z-50 bg-gray-100 ">
+                    <div class="top flex text-black rounded-t-md overflow-hidden md:ml-20 lg:pl-1 my-5 ">
+                        <div class="buttons my-auto flex rounded-full  get-int-pills bg-white">
+                            <span tab="1"
+                                class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3 active-button ">2021</span>
+                            <span tab="2" class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3">2021</span>
+                            <span tab="3" class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3">2021</span>
+                            <span tab="4" class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3">2021</span>
+                            <span tab="5" class="btn bg-white text-xl cursor-pointer p-2 md:px-5 px-3">2021</span>
+                        </div>
+                    </div>
+                    <div class="center  relative">
+                        <!-- tab start -->
+                        <div class="tab  rounded-b-md w-full  absolute top-0 active-tab">
+                            <p class="text-3xl p-3 px-5 font-semibold overpassfont-family">Update</p>
+
+                            <div class="p-3 px-5 text-xl">
+                                <div class="long-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusamus
+                                    expedita rem dolore ut numquam fugiat, accusantium consequatur ratione nesciunt
+                                    magnam
+                                    quibusdam necessitatibus dolorum velit. Quia illo autem adipisci cupiditate.
+                                    Repellendus!</div>
+                                <br>
+
+                            </div>
+
+                        </div>
+                        <!--     tab end -->
+                        <div class="tab  rounded-b-md w-full absolute ">
+                            <p class="text-3xl p-3 px-5 font-semibold">Wellcome To Tab 2</p>
+                            <div class="p-3 px-5 text-xl">
+                                <div class="long-text">If you are going to use a passage of Lorem Ipsum, you need to be
+                                    sure
+                                    there isn't anything embarrassing hidden in the middle of text.
+                                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                                    necessary, making this the first </div>
+                                <br>
+
+                            </div>
+
+                        </div>
+                        <!--     tab end -->
+                        <div class="tab rounded-b-md w-full absolute ">
+                            <p class="text-3xl p-3 px-5 font-semibold">Wellcome To Tab 3</p>
+
+                            <div class="p-3 px-5 text-xl">
+                                <div class="long-text">If you are going to use a passage of Lorem Ipsum, you need to be
+                                    sure
+                                    there isn't anything embarrassing hidden in the middle of text.
+                                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                                    necessary, making this the first </div>
+                                <br>
+
+                            </div>
+
+                        </div>
+                        <!--     tab end -->
+                        <div class="tab  rounded-b-md w-full  absolute ">
+                            <p class="text-3xl p-3 px-5 font-semibold">Wellcome To Tab 4</p>
+
+                            <div class="p-3 px-5 text-xl">
+                                <div class="long-text">If you are going to use a passage of Lorem Ipsum, you need to be
+                                    sure
+                                    there isn't anything embarrassing hidden in the middle of text.
+                                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                                    necessary, making this the first </div>
+                                <br>
+
+                            </div>
+
+                        </div>
+                        <!--     tab end -->
+                        <div class="tab rounded-b-md w-full absolute ">
+                            <p class="text-3xl p-3 px-5 font-semibold">Wellcome To Tab 5</p>
+
+                            <div class="p-3 px-5 text-xl">
+                                <div class="long-text">If you are going to use a passage of Lorem Ipsum, you need to be
+                                    sure
+                                    there isn't anything embarrassing hidden in the middle of text.
+                                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                                    necessary, making this the first </div>
+                            </div>
+
+                        </div>
+                        <!--     tab end -->
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <!------------------------------------- end of vision--------------------------------------------->
@@ -336,6 +353,7 @@
                 <div class=" bg-blue-600 h-2 w-20"></div>
             </div>
         </div>
+        <div class="container mx-auto">
         <div class="grid lg:grid-cols-3 gap-4">
             <div class="text-center mx-auto lg:mt-0 mt-16">
                 <div class="one-third">
@@ -383,172 +401,179 @@
                 class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-16 uppercase rounded text-xl overpassfont-family">
                 view all
             </button></div>
-            </div>
-        <!------------------------end of team member------------------------->
-        <!---------------------------client says---------------------------->
-        <div class=" lg:my-10  bg-client-img  bg-no-repeat bg-cover ">
-            <div
-                class="bg-repair-service2-img  max-w-screen  p-4 bg-opacity-25 shadow-md mx-aut hover:shadow-lg ">
-                <div class="text-center  max-w-6xl mx-auto lg:pt-40 pt-10 pb-20 ">
-                    <h2 class="text-white font-bold uppercase sansation-fontFamily text-5xl  text-opacity-100 ">Clients
-                        Say
-                    </h2>
-                    <div class="testiSlide">
-                        <div>
-                            <figure class="testimonial">
-                                <blockquote
-                                    class=" text-xl mt-10 overpassfont-family text-white lg:mx-5 lg:px-20 text-center ">Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </div>
+</div>
+    <!------------------------end of team member------------------------->
+    <!---------------------------client says---------------------------->
+    <div class=" lg:my-10  bg-client-img  bg-no-repeat bg-cover ">
+        <div class="bg-repair-service2-img  max-w-screen  p-4 bg-opacity-25 shadow-md mx-aut hover:shadow-lg ">
+            <div class="text-center  max-w-6xl mx-auto lg:pt-40 pt-10 pb-20 ">
+                <h2 class="text-white font-bold uppercase sansation-fontFamily text-5xl  text-opacity-100 ">Clients
+                    Say
+                </h2>
+                <div class="testiSlide container mx-auto">
+                    <div>
+                        <figure class="testimonial">
+                            <blockquote
+                                class=" text-xl mt-10 overpassfont-family text-white lg:mx-5 lg:px-20 text-center ">
+                                Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-                                </blockquote>
+                            </blockquote>
 
-                            </figure>
-                        </div>
-
-                        <div>
-                            <figure class="testimonial">
-                                <blockquote
-                                    class=" text-xl mt-10 overpassfont-family text-white lg:mx-5 lg:px-20 text-center  ">Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-                                </blockquote>
-
-                            </figure>
-                        </div>
-
-                        <div>
-                            <figure class="testimonial">
-                                <blockquote
-                                    class=" text-xl mt-10 overpassfont-family text-white lg:mx-5 lg:px-20 text-center  ">Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-                                </blockquote>
-
-                            </figure>
-                        </div>
-
-                        <div>
-                            <figure class="testimonial">
-                                <blockquote
-                                    class=" text-xl mt-10 overpassfont-family text-white lg:mx-5 lg:px-20 text-center ">Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-                                </blockquote>
-
-                            </figure>
-                        </div>
+                        </figure>
                     </div>
 
+                    <div>
+                        <figure class="testimonial">
+                            <blockquote
+                                class=" text-xl mt-10 overpassfont-family text-white lg:mx-5 lg:px-20 text-center  ">
+                                Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+                            </blockquote>
+
+                        </figure>
+                    </div>
+
+                    <div>
+                        <figure class="testimonial">
+                            <blockquote
+                                class=" text-xl mt-10 overpassfont-family text-white lg:mx-5 lg:px-20 text-center  ">
+                                Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+                            </blockquote>
+
+                        </figure>
+                    </div>
+
+                    <div>
+                        <figure class="testimonial">
+                            <blockquote
+                                class=" text-xl mt-10 overpassfont-family text-white lg:mx-5 lg:px-20 text-center ">
+                                Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+                            </blockquote>
+
+                        </figure>
+                    </div>
                 </div>
+
             </div>
         </div>
-<!----------------------------end of client says---------------------->
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pb-5 lg:pt-0 pt-16 h-100  bg-no-repeat bg-cover">
+    </div>
+    <!----------------------------end of client says---------------------->
+    <div class="container mx-auto">
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pb-5 lg:pt-0 pt-16 h-100  bg-no-repeat bg-cover">
 
 
-            <div class="card text-center  py-6">
-                <div class=" flex justify-center"> <img src="images/energy.png" class="h-12" alt=""></div>
-                <h3 class="text-blue-600 font-extrabold text-4xl my-4">24+ Years</h3>
-                <p class="text-gray-900 text-xl font-bold">of Experience & Record</p>
-            </div>
+        <div class="card text-center  py-6">
+            <div class=" flex justify-center"> <img src="images/energy.png" class="h-12" alt=""></div>
+            <h3 class="text-blue-600 font-extrabold text-4xl my-4">24+ Years</h3>
+            <p class="text-gray-900 text-xl font-bold">of Experience & Record</p>
+        </div>
 
 
-            <div class="card  text-center  py-6">
-                <div class=" flex justify-center"> <img src="images/energy.png" class="h-12" alt=""></div>
-                <h3 class="text-blue-600 font-extrabold  text-4xl my-4">3500</h3>
-                <p class="text-gray-900 text-xl font-bold">System Installed</p>
-            </div>
+        <div class="card  text-center  py-6">
+            <div class=" flex justify-center"> <img src="images/energy.png" class="h-12" alt=""></div>
+            <h3 class="text-blue-600 font-extrabold  text-4xl my-4">3500</h3>
+            <p class="text-gray-900 text-xl font-bold">System Installed</p>
+        </div>
 
 
-            <div class="card  text-center  py-6">
-                <div class=" flex justify-center"> <img src="images/energy.png" class="h-12" alt=""></div>
-                <h3 class="text-blue-600 font-extrabold  text-4xl my-4">6.5K Watt</h3>
-                <p class="text-gray-900 text-xl font-bold">Energy Finacing Done</p>
-            </div>
+        <div class="card  text-center  py-6">
+            <div class=" flex justify-center"> <img src="images/energy.png" class="h-12" alt=""></div>
+            <h3 class="text-blue-600 font-extrabold  text-4xl my-4">6.5K Watt</h3>
+            <p class="text-gray-900 text-xl font-bold">Energy Finacing Done</p>
+        </div>
 
-            <div class="card text-center py-6">
-                <div class=" flex justify-center"> <img src="images/energy.png" class="h-12" alt=""></div>
-                <h3 class="text-blue-600 font-extrabold  text-4xl my-4">2700+</h3>
-                <p class="text-gray-900 text-xl font-bold">Hours Of Inspection</p>
-            </div>
+        <div class="card text-center py-6">
+            <div class=" flex justify-center"> <img src="images/energy.png" class="h-12" alt=""></div>
+            <h3 class="text-blue-600 font-extrabold  text-4xl my-4">2700+</h3>
+            <p class="text-gray-900 text-xl font-bold">Hours Of Inspection</p>
+        </div>
+    </div>
 </div>
-
-<hr>
-        <!-----------------------------blogs--------------------------------->
-        <div id="blog">
-            <div class="text-center lg:my-20 my-10  max-w-3xl mx-auto">
-                <h2 class=" font-bold uppercase overpassfont-family font-xl">Articles</h2>
-                <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily">Our Blog</h1>
-                <div class="md:ml-80 pl-4 ml-36">
-                    <div class=" bg-blue-600 h-4 w-20"></div>
-                </div>
-
+    <hr>
+    <!-----------------------------blogs--------------------------------->
+    <div id="blog">
+        <div class="text-center lg:my-20 my-10  max-w-3xl mx-auto">
+            <h2 class=" font-bold uppercase overpassfont-family font-xl">Articles</h2>
+            <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily">Our Blog</h1>
+            <div class="md:ml-80 pl-4 ml-36">
+                <div class=" bg-blue-600 h-4 w-20"></div>
             </div>
-            <!------------------cards in tailwind------------------------------->
-            <div class="bg-gray-50 py-10 mt-40">
-                <div class="grid md:grid-cols-3 gap-4 lg:ml-24 mx-5" style="margin-top: -180px;">
+
+        </div>
+        <!------------------cards in tailwind------------------------------->
+        <div class=" container-fluid bg-gray-50 py-10 mt-48">
+            <div class="container mx-auto">
+            <div class="grid md:grid-cols-3  gap-4 lg:ml-24 mx-5 flex justify-center" style="margin-top: -180px;">
+                <div class="flex justify-center">
                     <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4 hover:bg-gray-100 ">
                         <img class="w-full h-56 object-cover object-center"
                             src="images/power-control-centre-500x500.jpg" alt="avatar">
@@ -571,7 +596,9 @@
 
                         </div>
                     </div>
-                    <!------------------------ist end-------------------->
+                </div>
+                <!------------------------ist end-------------------->
+                <div class="flex justify-center">
                     <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4 hover:bg-gray-100">
                         <img class="w-full h-56 object-cover object-center" src="images/index.jpg" alt="avatar">
                         <div class="py-4 px-6">
@@ -591,7 +618,9 @@
 
                         </div>
                     </div>
-                    <!-----------------------------2nd end---------------->
+                </div>
+                <!-----------------------------2nd end---------------->
+                <div class="flex justify-center">
                     <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4 hover:bg-gray-100">
                         <img class="w-full h-56 object-cover object-center" src="images/images.jpg" alt="avatar">
                         <div class="py-4 px-6">
@@ -612,245 +641,248 @@
 
                         </div>
                     </div>
-                    <!---------------------3rd end----------------------------------->
                 </div>
-                <div class="flex justify-center my-10">
-                    <button
-                        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-16 uppercase rounded text-xl overpassfont-family">
-                        view all
-                    </button></div>
+                <!---------------------3rd end----------------------------------->
             </div>
+            <div class="flex justify-center my-10">
+                <button
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-16 uppercase rounded text-xl overpassfont-family">
+                    view all
+                </button></div>
         </div>
-        <!-------------------------end of cards-------------------------- -->
-        <!---------------------------end of blogs----------------------------->
-        <!----------------------contact info---------------------------------->
-        <div class="text-center mt-10  max-w-6xl mx-auto " id="contact-us">
-            <h2 class=" font-bold uppercase overpassfont-family font-xl">Contact Info</h2>
-            <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily">Get in Touch</h1>
-            <div class="lg:ml-96 lg:pl-36 md:pl-48  ml-36">
-                <div class=" bg-blue-600 h-4 w-20"></div>
-            </div>
-            <div class="relative grid md:grid-cols-2  lg:mt-20 mb-5">
-                <div class=" bg-contact1-img h-5/5 bg-no-repeat bg-cover mt-10 relative">
-                    <div
-                        class="bg-contact2-img h-full max-w-screen -2xl p-4 bg-opacity-25 shadow-md mx-aut hover:shadow-lg ">
-                        <div class="text-left max-w-xl mx-10 py-10 ">
-                            <div class="py-5">
-                                <h2
-                                    class=" font-bold uppercase overpassfont-family text-xl text-blue-600 text-opacity-100 ">
-                                    Address
-                                </h2>
-                                <p class="text-regular text-lg overpassfont-family text-white ">If you are going to use
-                                    a
-                                    passage of Lorem Ipsum, If you are going to use.</p>
-                            </div>
-                            <div class="py-5">
-                                <h2
-                                    class=" font-bold uppercase overpassfont-family text-xl text-blue-600 text-opacity-100 ">
-                                    Email
-                                </h2>
-                                <p class="text-regular text-lg  overpassfont-family text-white ">12345@gmail.com</p>
-                            </div>
+    </div>
+</div>
+    <!-------------------------end of cards-------------------------- -->
+    <!---------------------------end of blogs----------------------------->
+    <!----------------------contact info---------------------------------->
+    <div class="container text-center mt-10  max-w-6xl mx-auto " id="contact-us">
+        <h2 class=" font-bold uppercase overpassfont-family font-xl">Contact Info</h2>
+        <h1 class="font-bold text-5xl my-5 uppercase sansation-fontFamily">Get in Touch</h1>
+        <div class="lg:ml-96 lg:pl-36 md:pl-48  ml-36">
+            <div class=" bg-blue-600 h-4 w-20"></div>
+        </div>
+        <div class="relative grid md:grid-cols-2  lg:mt-20 mb-5">
+            <div class=" bg-contact1-img h-5/5 bg-no-repeat bg-cover mt-10 relative">
+                <div
+                    class="bg-contact2-img h-full max-w-screen -2xl p-4 bg-opacity-25 shadow-md mx-aut hover:shadow-lg ">
+                    <div class="text-left max-w-xl mx-10 py-10 ">
+                        <div class="py-5">
                             <h2
                                 class=" font-bold uppercase overpassfont-family text-xl text-blue-600 text-opacity-100 ">
-                                Contact
+                                Address
                             </h2>
-                            <p class="text-regular text-lg  overpassfont-family text-white ">1234567890</p>
+                            <p class="text-regular text-lg overpassfont-family text-white ">If you are going to use
+                                a
+                                passage of Lorem Ipsum, If you are going to use.</p>
+                        </div>
+                        <div class="py-5">
+                            <h2
+                                class=" font-bold uppercase overpassfont-family text-xl text-blue-600 text-opacity-100 ">
+                                Email
+                            </h2>
+                            <p class="text-regular text-lg  overpassfont-family text-white ">12345@gmail.com</p>
+                        </div>
+                        <h2 class=" font-bold uppercase overpassfont-family text-xl text-blue-600 text-opacity-100 ">
+                            Contact
+                        </h2>
+                        <p class="text-regular text-lg  overpassfont-family text-white ">1234567890</p>
 
-                        </div>
-                        <div class="flex ">
-                         <a href="" class="mx-3"><img src="images/facebook@1X.png" class="ml-6" alt=""></a>
-                         <a href="" class="mx-3"><img src="images/instagram@1X.png" class="ml-2" alt=""></a>
-                         <a href="" class="mx-3"><img src="images/twitter@1X.png" class="ml-2" alt=""></a>
-                        </div>
+                    </div>
+                    <div class="flex ">
+                        <a href="" class="mx-3"><img src="images/facebook@1X.png" class="ml-6" alt=""></a>
+                        <a href="" class="mx-3"><img src="images/instagram@1X.png" class="ml-2" alt=""></a>
+                        <a href="" class="mx-3"><img src="images/twitter@1X.png" class="ml-2" alt=""></a>
                     </div>
                 </div>
-                <!----------------form---------------------->
-                <div class="bg-gray-50  px-8 pt-6 pb-8 mb-4 flex flex-col h-full mt-5">
-                    <div class="mb-4">
-                        <label
-                            class="block text-grey-darker text-sm font-bold mb-2 overpassfont-family text-lg text-left"
-                            for="username">
-                            Your Name
-                        </label>
-                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-                            id="username" type="text" placeholder="">
-                    </div>
-                    <div class="mb-6">
-                        <label
-                            class="block text-grey-darker text-sm font-bold mb-2 overpassfont-family text-lg text-left"
-                            for="email">
-                            Your Email
-                        </label>
-                        <input
-                            class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3"
-                            id="email" type="email" placeholder=>
+            </div>
+            <!----------------form---------------------->
+            <div class="bg-gray-50  px-8 pt-6 pb-8 mb-4 flex flex-col h-full mt-5">
+                <div class="mb-4">
+                    <label class="block text-grey-darker text-sm font-bold mb-2 overpassfont-family text-lg text-left"
+                        for="username">
+                        Your Name
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="username"
+                        type="text" placeholder="">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-grey-darker text-sm font-bold mb-2 overpassfont-family text-lg text-left"
+                        for="email">
+                        Your Email
+                    </label>
+                    <input
+                        class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3"
+                        id="email" type="email" placeholder=>
 
-                    </div>
-                    <div class="mb-6">
-                        <label
-                            class="block text-grey-darker text-sm font-bold mb-2 overpassfont-family text-lg text-left"
-                            for="Subject">
-                            Subject
-                        </label>
-                        <input
-                            class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3"
-                            id="Subject" type="Subject" placeholder="">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-grey-darker text-sm font-bold mb-2 overpassfont-family text-lg text-left"
+                        for="Subject">
+                        Subject
+                    </label>
+                    <input
+                        class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3"
+                        id="Subject" type="Subject" placeholder="">
 
-                    </div>
-                    <div class="mb-6">
-                        <label
-                            class="block text-grey-darker text-sm font-bold mb-2 overpassfont-family text-lg text-left"
-                            for="Your Message">
-                            Your Message
-                        </label>
-                        <input
-                            class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3"
-                            id="Your Message" type="Your Message" placeholder="">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-grey-darker text-sm font-bold mb-2 overpassfont-family text-lg text-left"
+                        for="Your Message">
+                        Your Message
+                    </label>
+                    <input
+                        class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3"
+                        id="Your Message" type="Your Message" placeholder="">
 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------end of contact info------------------------>
+    <!--------------footer---------------------------------------->
+
+    <div class="container-fluid bg-gray-900 ">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-4   ">
+                <!--------divide-x divide-white-->
+                <div class="text-white  text-right lg:py-24 py-10">
+                    <div class="flex  justify-center ">
+                        <img src="images/logo.png" alt=""></div>
+                    <div class="flex  justify-center my-8">
+                        <h2 class="text-5xl sansation-fontFamily my-3 absolute  ">Stay
+                            In Touch</h2>
+                    </div>
+
+                </div>
+
+                <div class="lg:my-10  text-center py-10">
+                    <div><span class="text-white text-3xl font-bold overpassfont-family pt-5">Menu</span>
+                        <ul class="text-white text-lg  lg:py-10 py-2">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#repair-service"> Services</a></li>
+                            <li><a href="#product">Product</a></li>
+                            <li><a href="#technology">Tachnology</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" text-center  text-white lg:px-10 lg:py-24 overpassfont-family ">
+                    <div class="text-white text-3xl font-bold overpassfont-family">Contact Us</div>
+                    <div class="  lg:py-10 py-5">
+                        <h6>IPC<br>
+                            3344 S EAST TEMPLE #23-45<br>
+                            MOHALI<br>
+                            ELECRICITY - F 10AM - 5PM</h6>
+                    </div>
+                </div>
+                <div class="lg:py-24 py-10 ">
+                    <div class="text-white text-3xl font-bold overpassfont-family  text-center">Follow Us</div>
+                    <div class="flex  justify-center  lg:py-10 py-5">
+                        <a href=""> <img src="images/icons8-facebook-32.png" class="h-10 w-10 mx-2" alt=""></a>
+                        <a href=""> <img src="images/icons8-instagram.svg" alt="" class="h-8 w-8 mx-2 mt-1"></a>
+                        <a href=""> <img src="images/icons8-youtube.svg" alt="" class="h-8 w-8 mx-2 mt-1"></a>
+                        <a href=""> <img src="images/icons8-globe-24.png" alt="" class="h-8 w-8 mx-2 mt-1"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--------------------------end of contact info------------------------>
-        <!--------------footer---------------------------------------->
+    </div>
+    </div>
+    <!-------------------end o footer----------------->
+    <!------------------------------script--------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+    <script>
+        const root = document.querySelector(".tabs"), tabs = root.querySelectorAll(".tab"), btns = root.querySelectorAll(".btn");
+        root.onclick = function (e) {
+            var t = e.target, val = t.getAttribute("tab");
+            if (val != null) {
+                tabs.forEach(each => { each.classList.remove("active-tab"); });
+                btns.forEach(each => { each.classList.remove("active-button"); });
+                tabs[val - 1].classList.add("active-tab");
+                btns[val - 1].classList.add("active-button");
+            }
+        }
 
 
-
-        <div class="grid lg:grid-cols-4  bg-gray-900 h-100 bg-no-repeat bg-cover ">
-            <!--------divide-x divide-white-->
-            <div class="text-white  ltext-right lg:py-24 py-10">
-                <div class="flex lg:justify-end justify-center lg:ml-56">
-                    <img src="images/logo.png" alt=""></div>
-                <h2 class="text-5xl sansation-fontFamily my-3 absolute md:pl-56 pl-10 ">Stay
-                    In Touch</h2>
-            </div>
-
-            <div class="lg:my-10 lg:text-left text-center py-10">
-                <div class="text-white text-3xl font-bold overpassfont-family lg:pl-56 pt-5">Menu</div>
-                <ul class="text-white text-lg  lg:pl-56 lg:py-10 py-2">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#repair-service"> Services</a></li>
-                    <li><a href="#product">Product</a></li>
-                    <li><a href="#technology">Tachnology</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-            </div>
-            <div class=" text-center lg:text-left text-white lg:px-10 lg:py-24 overpassfont-family ">
-                <div class="text-white text-3xl font-bold overpassfont-family">Contact Us</div>
-                <div class="  lg:py-10 py-5">
-                <h6>IPC<br>
-                    3344 S EAST TEMPLE #23-45<br>
-                    MOHALI<br>
-                    ELECRICITY - F 10AM - 5PM</h6>
-            </div></div>
-            <div class="lg:py-24 py-10 ">
-                <div class="text-white text-3xl font-bold overpassfont-family lg:text-left text-center">Follow Us</div>
-                <div class="flex lg:justify-start justify-center  lg:py-10 py-5"> 
-               <a href=""> <img src="images/icons8-facebook-32.png" class="h-10 w-10 mx-2" alt=""></a>
-               <a href=""> <img src="images/icons8-instagram.svg" alt="" class="h-8 w-8 mx-2 mt-1"></a>
-               <a href=""> <img src="images/icons8-youtube.svg" alt="" class="h-8 w-8 mx-2 mt-1"></a>
-               <a href=""> <img src="images/icons8-globe-24.png" alt="" class="h-8 w-8 mx-2 mt-1"></a>
-            </div></div>
-        </div>
-
-
-        <!-------------------end o footer----------------->
-        <!------------------------------script--------------------------------->
-
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src='http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
-        <script>
-            const root = document.querySelector(".tabs"), tabs = root.querySelectorAll(".tab"), btns = root.querySelectorAll(".btn");
-            root.onclick = function (e) {
-                var t = e.target, val = t.getAttribute("tab");
-                if (val != null) {
-                    tabs.forEach(each => { each.classList.remove("active-tab"); });
-                    btns.forEach(each => { each.classList.remove("active-button"); });
-                    tabs[val - 1].classList.add("active-tab");
-                    btns[val - 1].classList.add("active-button");
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if ($(window).width() > 768) {
+                    if (scroll > 300) {
+                        $(".nav-position").css("background", "rgba(0, 0, 0, 0.5)");
+                    } else {
+                        $(".nav-position").css("background", "transparent");
+                    }
                 }
+            })
+
+            if ($(window).width() < 769) {
+                $('.nav-bg').css("background", "rgba(0, 0, 0, 0.5)")
+                $(window).scroll(function () {
+                    var scrolls = $(window).scrollTop();
+                    if (scrolls > 300) {
+                        $(".nav-position").css("background", "rgba(0, 0, 0, 0.5)");
+                        $('.nav-bg').css("background", "rgba(0, 0, 0, 0.0)")
+                    }
+                })
             }
 
 
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    var scroll = $(window).scrollTop();
-                    if ($(window).width() > 768) {
-                        if (scroll > 300) {
-                            $(".nav-position").css("background", "rgba(0, 0, 0, 0.5)");
-                        } else {
-                            $(".nav-position").css("background", "transparent");
+
+            $('a[href*=\\#]:not([href=\\#])').on('click', function () {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            });
+
+            $('.testiSlide').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                prev: true,
+                next: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            prev: false,
+                            next: false,
+
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
                         }
                     }
-                })
 
-                if ($(window).width() < 769) {
-                    $('.nav-bg').css("background", "rgba(0, 0, 0, 0.5)")
-                    $(window).scroll(function () {
-                        var scrolls = $(window).scrollTop();
-                        if (scrolls > 300) {
-                            $(".nav-position").css("background", "rgba(0, 0, 0, 0.5)");
-                            $('.nav-bg').css("background", "rgba(0, 0, 0, 0.0)")
-                        }
-                    })
-                }
-
-
-
-                $('a[href*=\\#]:not([href=\\#])').on('click', function () {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                });
-
-                $('.testiSlide').slick({                                                 
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 3000,
-                    prev :true,
-                    next:true,
-                    responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        prev :false,
-                    next:false,
-                       
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-
-            ]
-                });
-            })
-        </script>
+                ]
+            });
+        })
+    </script>
 </body>
 
 </html>
