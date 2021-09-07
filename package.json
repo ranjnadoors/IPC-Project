@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
     "build-css": "tailwindcss build src/style.css -o public/style.css",
     "prod": "NODE_ENV=production npx tailwindcss build src/style.css -o public/style.css"
   },
